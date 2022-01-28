@@ -13,10 +13,11 @@ def add_person():
         person = dict(användarnamn=an, förnamn=fn, efternamn=en, epost=ep)
     
         add.append(person)
+        print()
         print("Added person object.")
     
     
 #användarnamn;förnamn;efternamn;epost
     with open('labb2_personer.json', 'w', encoding="utf-8-sig") as fil:
         json.dump(add, fil, ensure_ascii=False, indent=4)
-        print("Updated JSON with person")        
+        print("Updated JSON with person.")        

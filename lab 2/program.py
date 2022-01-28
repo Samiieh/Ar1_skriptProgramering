@@ -1,10 +1,11 @@
 import json
 import csv
 from read_from_csv import read_csv
-# from save_to_json import save_to_json
+from save_to_csv import save_csv
 from show_json import show_json
 from add_to_json import add_person
 from remove_from_json import remove_person
+#from error_handling import errorhandling
 
 
 
@@ -12,15 +13,16 @@ def main():
     svar=True
     while svar:
         print("""  
-        B======D              Välkommen till            Ɑ======𐐒  
-        8~~~~~~~~~~~~~~~~~o         Sam     
-        # 1. Cvs till Json
+        ############################## ===>>   Välkommen till   <<=== ###############################
+        B==============================D     ~~~    Sam    ~~~    Ɑ=================================𐐒 
+        # 1. Läs in Cvs till Json
         # 2. Visa Json
-        # 3. Lägg till person        &
+        # 3. Lägg till person                        &
         # 4. Ta bort person
-        # 5. Spara fil
+        # 5. Spara Json till Csv
         # 6. Exit / breKK
-        B~~~~~~~~~~~~~~~~~~D   Danne's labb 2
+        B=============================D  ~~~   Danne's labb 2   ~~~  Ɑ===============================𐐒 
+        ##############################################################################################
         """)
         ans=input("Vad skulle du vilja göra? ")     
         print()
@@ -32,10 +34,12 @@ def main():
             add_person()
         elif ans=="4":
             remove_person()
-        #elif ans=="5":
-            #save_        
-        #else:
-            #svar = False 
+        elif ans=="5":
+            save_csv()        
+        elif ans == "6":
+            svar = False
+        else:
+            print("Välj mellan 1-6 i menyn") 
            
 
 
