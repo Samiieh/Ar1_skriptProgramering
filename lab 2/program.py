@@ -7,7 +7,6 @@ from add_to_json import add_person
 from remove_from_json import remove_person
 
 
-
 def main():
     svar=True
     while svar:
@@ -36,6 +35,8 @@ def main():
         elif ans=="5":
             save_csv()        
         elif ans == "6":
+            print("Tack ha en bra dag.")
+            print()
             svar = False
         else:
             print("Välj mellan 1-6 i menyn") 
