@@ -1,76 +1,178 @@
-{
-    "Search": [
-        {
-            "Title": "Avatar",
-            "Year": "2009",
-            "imdbID": "tt0499549",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Avatar: The Last Airbender",
-            "Year": "2005–2008",
-            "imdbID": "tt0417299",
-            "Type": "series",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BODc5YTBhMTItMjhkNi00ZTIxLWI0YjAtNTZmOTY0YjRlZGQ0XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_SX300.jpg"
-        },
-        {
-            "Title": "The King's Avatar",
-            "Year": "2017–",
-            "imdbID": "tt6859260",
-            "Type": "series",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BZjIyMjE5ZDYtMTQxNC00NTEzLTgwYzYtMmM0NDg3OWFlYWM5XkEyXkFqcGdeQXVyNjMxNzQ2NTQ@._V1_SX300.jpg"
-        },
-        {
-            "Title": "The King's Avatar",
-            "Year": "2019",
-            "imdbID": "tt10732794",
-            "Type": "series",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BOGMxZDc1N2ItODI3NS00MDIwLWJkYzAtMTgyMDZlN2FlNGYzXkEyXkFqcGdeQXVyMjQ0OTYxOTc@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Avatar: The Last Airbender - The Legend of Aang",
-            "Year": "2006",
-            "imdbID": "tt0959552",
-            "Type": "game",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BNjUwNzA5Nzc4N15BMl5BanBnXkFtZTgwNjM1ODY4MDE@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Avatar: The Game",
-            "Year": "2009",
-            "imdbID": "tt1517155",
-            "Type": "game",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMTYxODI2OTI4MF5BMl5BanBnXkFtZTcwNjI1NzMwMw@@._V1_SX300.jpg"
-        },
-        {
-            "Title": "The King's Avatar: For the Glory",
-            "Year": "2019",
-            "imdbID": "tt10736726",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMzFkZTMzOGUtOGM3NS00YzI2LTllMjgtODk0NDhkNWRiMTMzXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Avatar Spirits",
-            "Year": "2010",
-            "imdbID": "tt1900832",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMzQ4MDMxNjExNl5BMl5BanBnXkFtZTgwOTYzODI5NTE@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Avatar: The Last Airbender - Into the Inferno",
-            "Year": "2008",
-            "imdbID": "tt1459460",
-            "Type": "game",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BOWFjYWUwZTMtNjM2Mi00YjU3LWI2NjQtZTNhOTRhM2Q3YmJkXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Avatar: Creating the World of Pandora",
-            "Year": "2010",
-            "imdbID": "tt1599280",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BYjk4ZDAxN2MtYjhlNy00MzJhLWI1MGYtYjY5ZGJlY2YwMzNlXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_SX300.jpg"
-        }
-    ],
-    "totalResults": "89",
-    "Response": "True"
-}
+[
+    {
+        "Title": "Deadpool 2",
+        "Year": "2018",
+        "Rated": "R",
+        "Released": "18 May 2018",
+        "Runtime": "119 min",
+        "Genre": "Action, Adventure, Comedy",
+        "Director": "David Leitch",
+        "Writer": "Rhett Reese, Paul Wernick, Ryan Reynolds",
+        "Actors": "Ryan Reynolds, Josh Brolin, Morena Baccarin",
+        "Plot": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
+        "Language": "English, Cantonese, Spanish, Russian",
+        "Country": "United States",
+        "Awards": "6 wins & 52 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMDkzNmRhNTMtZDI4NC00Zjg1LTgxM2QtMjYxZDQ3OWJlMDRlXkEyXkFqcGdeQXVyNTU5MjkzMTU@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.7/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "84%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "66/100"
+            }
+        ],
+        "Metascore": "66",
+        "imdbRating": "7.7",
+        "imdbVotes": "537,488",
+        "imdbID": "tt5463162",
+        "Type": "movie",
+        "DVD": "21 Aug 2018",
+        "BoxOffice": "$324,591,735",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Deadpool: From Comics to Screen... to Screen",
+        "Year": "2016",
+        "Rated": "N/A",
+        "Released": "10 May 2016",
+        "Runtime": "80 min",
+        "Genre": "Documentary",
+        "Director": "N/A",
+        "Writer": "N/A",
+        "Actors": "Stan Lee, Fabian Nicieza, Rob Liefeld, Simon Kinberg",
+        "Plot": "This documentary divided into five segments examines the source and its path to the movies, backstory, special effects story/character areas, cast and performances. It includes notes from ...",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "N/A",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTljZTM5YzctZDc0My00YmQ4LWFjNjAtYmE2ZjJiNGFjNmEyXkEyXkFqcGdeQXVyMjQ5NjgwMjA@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.9/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "109",
+        "imdbID": "tt5852644",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Boys on Film 7: Bad Romance",
+        "Year": "2011",
+        "Rated": "N/A",
+        "Released": "26 Sep 2011",
+        "Runtime": "165 min",
+        "Genre": "Drama",
+        "Director": "Joachim Back, Christopher Banks, Etienne Desrosiers",
+        "Writer": "N/A",
+        "Actors": "Jan Andreesen, Liane Balaban, Julie Beauchemin",
+        "Plot": "Prepare to experience an alternative take on attraction. Boys On Film explores the darker side of romance with a collection of edgy, controversial and sexy short films that have wowed film festival audiences the world over.",
+        "Language": "English",
+        "Country": "United Kingdom",
+        "Awards": "N/A",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNWFiNmM2NTYtMzc4Ni00ZTM0LThmNjktYzgzNzYwOGE2OWI0XkEyXkFqcGdeQXVyMjI0Mjk2MDg@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.2/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.2",
+        "imdbVotes": "79",
+        "imdbID": "tt5521056",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Capturing Avatar",
+        "Year": "2010",
+        "Rated": "Not Rated",
+        "Released": "16 Nov 2010",
+        "Runtime": "98 min",
+        "Genre": "Documentary",
+        "Director": "Laurent Bouzereau",
+        "Writer": "N/A",
+        "Actors": "James Cameron, Jon Landau, James Gianopulos, Yuri Bartoli",
+        "Plot": "James Cameron always had an intense interest in the woods and the dwellers that might live within them. He wanted to delve deeply into the world of visual effects and what could be ...",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "N/A",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOGFkNWUzOWEtNjY0Ny00NGI0LWE5ZDktNGE0MTBkYTM4MjFjXkEyXkFqcGdeQXVyMjQ5NjgwMjA@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "8.0",
+        "imdbVotes": "76",
+        "imdbID": "tt1778212",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Gladiator",
+        "Year": "2000",
+        "Rated": "R",
+        "Released": "05 May 2000",
+        "Runtime": "155 min",
+        "Genre": "Action, Adventure, Drama",
+        "Director": "Ridley Scott",
+        "Writer": "David Franzoni, John Logan, William Nicholson",
+        "Actors": "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
+        "Plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Malta, Morocco",
+        "Awards": "Won 5 Oscars. 59 wins & 106 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.5/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "77%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "67/100"
+            }
+        ],
+        "Metascore": "67",
+        "imdbRating": "8.5",
+        "imdbVotes": "1,428,650",
+        "imdbID": "tt0172495",
+        "Type": "movie",
+        "DVD": "26 Sep 2000",
+        "BoxOffice": "$187,705,427",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    }
+]
