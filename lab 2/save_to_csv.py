@@ -4,6 +4,12 @@ import csv
 
 def save_csv():
     
+    # öppnar json filen med read
+    # Tar keys från index 0 och sparar i headers
+
+    # Sedan öppnar vi csv filen i writemode för att kunna skriva över 
+    # sparar en rad med key från headers
+    # sedan har vi en for loop som går igenom json_data och fyller på rad för rad med values.
     
     with open('labb2_personer.json', 'r', encoding="utf-8-sig") as fil:     
         json_data = json.load(fil)
@@ -18,15 +24,3 @@ def save_csv():
             user_data = users.values()
             writer.writerow(user_data) # fyller på rad för rad med values
     print("Save to Csv successful!")    
-            
-            
-        # csv_data = csv.writer(fil, delimiter=";")
-        # count = 0
-        
-        # for character in json_data:
-        #     if count == 0:
-        #         header = character.keys()
-        #         csv_data.writerow(header)
-        #         count += 1
-        #     characters = character.values()
-        #     csv_data.writerow(characters)    

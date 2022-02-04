@@ -1,7 +1,9 @@
 import json
 import csv
-    
-#VISA JSON FIL
+
+# VISA JSON FIL
+# Öppnar json filen med readmode
+# Printar ut innehållet med hjälv av en forloop
 def show_json():
        
        try:    

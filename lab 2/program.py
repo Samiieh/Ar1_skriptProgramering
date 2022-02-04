@@ -40,7 +40,5 @@ def main():
             svar = False
         else:
             print("Välj mellan 1-6 i menyn") 
-           
-
-
+            
 main()
