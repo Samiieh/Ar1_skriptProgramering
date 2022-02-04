@@ -29,7 +29,7 @@ def gissnings_spel():
         print(f"Ouch :( , talet jag tänkte på var: {number} \n")  
         
         
-                                #<------------ Gissnings spelet ------------>
+                                #<------------ delbara heltal ------------>
         
 def delbara_heltal():
     print("Du har kommit till delbara tal! \n")
@@ -52,7 +52,7 @@ def delbara_heltal():
             
 def error_handler():
     while True:
-        tal = input("Skriv in ett heltal: ")
+        tal = input()
         try:
             return int(tal)
         except ValueError:                      ## Exeption som 
