@@ -20,29 +20,35 @@ def main():
         """)
         ans=input("Välj ett av alternativen mellan 1 -3: ")
         print()
+        # Ber användaren om namnet på en film, sparar detta i searced_movies
+        # sedan använder vi searched_movies i url:en till får metod fetch_url
+        # skickar med urlen som en parameter till metoden
+        # Metoden returnerar sedan requesten till result
+        # Om key Search finns i result.keys()
+        # Körs en forloop som går in i key Search och skriver ut varje keys för: Titel, År, imdbID.
+        # Sedan får användaren ange imdbID på filmen den vill ha mer information om
+        # Och då görs ett till anrop till metoden fetch_url, med det nya inputet i url:en istället.
+        # Denna gång använder vi ?i istället för ?s som vid första anropet.
+        # Metoden returnerar värdet och sparar detta i result som vid tidigare anrop.
+        # Vi skickar med result till save_to_json metoden
+        #  
         if ans=="1":
             searched_movie = input("Skriv in namnet på filmen du vill söka: ")
             result = fetch_movie.fetch_url(f'https://www.omdbapi.com/?s={searched_movie}&apikey=8ad4d71&type=movie') #fetch.fetch_url i program-menyn
             
-            if 'Search' in result.keys():
+            if "Search" in result.keys():
                 for k in result["Search"]:
                     print("Titel: " + k["Title"])
-                    #saved.append(k["Title"])
                     print("År: " + k["Year"])
-                    #saved.append(k["Year"])
                     print("imdbID: " + k["imdbID"])
-                    #saved.append(k["Type"])
                     print()
                 id=input("Ange imdbID på den filmen du söker: ")
                 print()    
                 result = fetch_movie.fetch_url(f'https://www.omdbapi.com/?i={id}&apikey=8ad4d71&type=movie')
                 file_handling.save_to_json(result)
                 print("Titel: " + result["Title"])
-                #saved.append(k["Title"])
                 print("År: " + result["Year"])
-                #saved.append(k["Year"])
                 print("Plot: " + result["Plot"])
-                #saved.append(k["Type"])
                 print()
             else:
                 print(f"{searched_movie} Sökningen finns tyvärr inte, testa en annan film! ")
