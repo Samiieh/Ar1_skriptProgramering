@@ -1,0 +1,16 @@
+[
+    {
+        "paymenttype": "1",
+        "fname": "Daniel",
+        "ename": "Ekhom",
+        "address": "manna",
+        "zipcode": "89014",
+        "city": "Falun",
+        "cellphone": "92329324",
+        "email": "dunn@du.se",
+        "offers": "offers",
+        "format": "text",
+        "comment": "kommentar",
+        "submit": "Skicka"
+    }
+]
