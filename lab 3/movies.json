@@ -1,77 +1,5 @@
 [
     {
-        "Title": "Deadpool 2",
-        "Year": "2018",
-        "Rated": "R",
-        "Released": "18 May 2018",
-        "Runtime": "119 min",
-        "Genre": "Action, Adventure, Comedy",
-        "Director": "David Leitch",
-        "Writer": "Rhett Reese, Paul Wernick, Ryan Reynolds",
-        "Actors": "Ryan Reynolds, Josh Brolin, Morena Baccarin",
-        "Plot": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
-        "Language": "English, Cantonese, Spanish, Russian",
-        "Country": "United States",
-        "Awards": "6 wins & 52 nominations",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMDkzNmRhNTMtZDI4NC00Zjg1LTgxM2QtMjYxZDQ3OWJlMDRlXkEyXkFqcGdeQXVyNTU5MjkzMTU@._V1_SX300.jpg",
-        "Ratings": [
-            {
-                "Source": "Internet Movie Database",
-                "Value": "7.7/10"
-            },
-            {
-                "Source": "Rotten Tomatoes",
-                "Value": "84%"
-            },
-            {
-                "Source": "Metacritic",
-                "Value": "66/100"
-            }
-        ],
-        "Metascore": "66",
-        "imdbRating": "7.7",
-        "imdbVotes": "537,488",
-        "imdbID": "tt5463162",
-        "Type": "movie",
-        "DVD": "21 Aug 2018",
-        "BoxOffice": "$324,591,735",
-        "Production": "N/A",
-        "Website": "N/A",
-        "Response": "True"
-    },
-    {
-        "Title": "Deadpool: From Comics to Screen... to Screen",
-        "Year": "2016",
-        "Rated": "N/A",
-        "Released": "10 May 2016",
-        "Runtime": "80 min",
-        "Genre": "Documentary",
-        "Director": "N/A",
-        "Writer": "N/A",
-        "Actors": "Stan Lee, Fabian Nicieza, Rob Liefeld, Simon Kinberg",
-        "Plot": "This documentary divided into five segments examines the source and its path to the movies, backstory, special effects story/character areas, cast and performances. It includes notes from ...",
-        "Language": "English",
-        "Country": "USA",
-        "Awards": "N/A",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMTljZTM5YzctZDc0My00YmQ4LWFjNjAtYmE2ZjJiNGFjNmEyXkEyXkFqcGdeQXVyMjQ5NjgwMjA@._V1_SX300.jpg",
-        "Ratings": [
-            {
-                "Source": "Internet Movie Database",
-                "Value": "6.9/10"
-            }
-        ],
-        "Metascore": "N/A",
-        "imdbRating": "6.9",
-        "imdbVotes": "109",
-        "imdbID": "tt5852644",
-        "Type": "movie",
-        "DVD": "N/A",
-        "BoxOffice": "N/A",
-        "Production": "N/A",
-        "Website": "N/A",
-        "Response": "True"
-    },
-    {
         "Title": "Boys on Film 7: Bad Romance",
         "Year": "2011",
         "Rated": "N/A",
@@ -171,6 +99,86 @@
         "Type": "movie",
         "DVD": "26 Sep 2000",
         "BoxOffice": "$187,705,427",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Avatar",
+        "Year": "2009",
+        "Rated": "PG-13",
+        "Released": "18 Dec 2009",
+        "Runtime": "162 min",
+        "Genre": "Action, Adventure, Fantasy",
+        "Director": "James Cameron",
+        "Writer": "James Cameron",
+        "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+        "Plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "Language": "English, Spanish",
+        "Country": "United States",
+        "Awards": "Won 3 Oscars. 89 wins & 131 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "81%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "83/100"
+            }
+        ],
+        "Metascore": "83",
+        "imdbRating": "7.8",
+        "imdbVotes": "1,175,601",
+        "imdbID": "tt0499549",
+        "Type": "movie",
+        "DVD": "22 Apr 2010",
+        "BoxOffice": "$760,507,625",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Interstellar",
+        "Year": "2014",
+        "Rated": "PG-13",
+        "Released": "07 Nov 2014",
+        "Runtime": "169 min",
+        "Genre": "Adventure, Drama, Sci-Fi",
+        "Director": "Christopher Nolan",
+        "Writer": "Jonathan Nolan, Christopher Nolan",
+        "Actors": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+        "Plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Canada",
+        "Awards": "Won 1 Oscar. 44 wins & 148 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.6/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "72%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "74/100"
+            }
+        ],
+        "Metascore": "74",
+        "imdbRating": "8.6",
+        "imdbVotes": "1,676,203",
+        "imdbID": "tt0816692",
+        "Type": "movie",
+        "DVD": "31 Mar 2015",
+        "BoxOffice": "$188,020,017",
         "Production": "N/A",
         "Website": "N/A",
         "Response": "True"
