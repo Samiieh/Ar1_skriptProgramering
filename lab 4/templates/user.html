@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forumlär</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        textarea {
+            display: block;
+        }
+
+        form {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        {% block content %}
+            <h1>Registrerade uppgifter</h1>
+            <ul>
+            {% for key in data.keys()%}
+                <li>{{key}}: {{data[key]}}</li>
+            {% endfor %}
+            </ul>
+        {% endblock %}
+    </div>
+</body>
+</html>
+
+        

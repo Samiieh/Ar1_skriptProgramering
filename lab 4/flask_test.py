@@ -1,12 +1,8 @@
-from base64 import encode
-from urllib import request
 from flask import Flask, escape, request,jsonify, render_template
-from flask_cors import CORS
 import sqlite3
 import json
 
 app = Flask(__name__) # skapar en instans av flask där vi skickar in namnet på klassen etc
-CORS(app)
 
 @app.route('/') # definiera en route, startsidan.
 def index():    # skapar en metod för vad som ska hända när man kommer till startsidan
@@ -14,69 +10,37 @@ def index():    # skapar en metod för vad som ska hända när man kommer till s
 
 @app.route('/postjson/', methods=['POST'])
 def postjson():
+    data = request.form
+    print(data)
+    return render_template("user.html", data=data)
 
-    lista = []
-    #person = dict(request.json)
+@app.route('/weather', methods=['POST'])
+def vadsomhelst():
+    data = request.json
+    print(data)
     
-    lista.append(request.json)
-    print(request.json)
+    #test = [data["moist"], data["pressure"], data["temp"], data["orten"]]
 
-    with open("person.json", "w", encoding="utf-8") as fil:
-        fil.write(json.dumps(lista, indent=4, ensure_ascii=False))
-    return request.json
+    sql = '''INSERT INTO WeatherData (Moist, Pressure, Temp, Plats)
+    VALUES
+    ({0},{1},{2},"{3}")
+    '''.format(data["moist"],data["pressure"],data["temp"],data["orten"])
 
-# def postjson():
-#     user_dict = []
-#     user_dict = request.json
-#     #user_dict = request.json
-#     print(request.json)
-#     with open('person.json', 'w') as fil:
-#         json.dump(user_dict, fil, indent=4, ensure_ascii=False)
-#         fil.write(user_dict)
-#     return request.json
+    conn = sqlite3.connect('database.db')
+    c = conn.cursor()
+    c.execute(sql)
+    conn.commit()
+    return ""
 
+@app.route('/show/', methods=['GET'])
+def show():
+    conn = sqlite3.connect('database.db')
+    c = conn.cursor()
+    c.execute('''SELECT * FROM WeatherData''')
+    WeatherData = c.fetchall()
 
+    return ""
 
-# @app.route('/postjson/', methods=['POST'])
-# def postjson():
-#     personer = request.json
-#     print(request.json)
-#     with open('person.json', 'w') as fil:
-#         json.dumps(personer, fil, ensure_ascii=False, indent=4)
-#     return request.json
-
-@app.route('/visa/')
-def visa():
-    with open('person.json', 'r', encoding="utf-8-sig") as fil:
-        visa = json.load(fil)
-        #print(visa)
-    return f'Användare {visa}'
+app.run(host='0.0.0.0', port=5000)
 
 
-@app.route('/hello/')
-def hello():
-    name = request.args.get('name', 'world')
-    return f'hello {name}'
-
-@app.route('/users/')
-def users():
-    # conn = sqlite3.connect('database.db') #skapar en anslutning till databasen
-    # c = conn.cursor() # skapar en variabel vi kan arbeta med
-    # c.execute('''SELECT username, password, id FROM users''')
-    # users = c.fetchall() # hämta allt från users
-    users = [
-        { "username" : "thomas"},
-        { "username" : "johanna"}
-    ]
-    return jsonify(users)
-
-
-
-
-
-    #return { 'status' : f'Det här är ditt post data: {request.json}' }
-    #request.form.get('fname')
-    #name = request.args.get("name", "world")
-    #return f"hello {name}"
-
-    
