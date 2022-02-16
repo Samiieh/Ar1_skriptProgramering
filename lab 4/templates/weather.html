@@ -29,6 +29,7 @@
                 <th>Moist</th>
                 <th>Temp</th>
                 <th>Pressure</th>
+                <th>Tid</th>
                 </tr>
                 {% for row in data %}
                 <tr>
@@ -37,6 +38,7 @@
                 <td>{{ row[2] }}</td>
                 <td>{{ row[3] }}</td>
                 <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
                 </tr>
                 {% endfor %}
             </table>
