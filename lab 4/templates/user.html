@@ -25,7 +25,7 @@
             <h1>Registrerade uppgifter</h1>
             <ul>
             {% for key in data.keys()%}
-                <li>{{key}}: {{data[key]}}</li>
+                <li>{{key}} {{data[key]}}</li>
             {% endfor %}
             </ul>
         {% endblock %}
