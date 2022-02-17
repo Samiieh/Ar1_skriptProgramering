@@ -20,11 +20,11 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        {% block content %}
+    <div class="wrapper">       
+        {% block content %}    
             <h1>Registrerade uppgifter</h1>
             <ul>
-            {% for key in data.keys()%}
+            {% for key in data.keys()%}              
                 <li>{{key}} {{data[key]}}</li>
             {% endfor %}
             </ul>

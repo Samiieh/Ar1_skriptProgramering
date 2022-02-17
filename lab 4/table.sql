@@ -7,3 +7,4 @@ CREATE TABLE IF NOT EXISTS WeatherData (
     Tid TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+/* Skapar en table som heter WeatherData */
