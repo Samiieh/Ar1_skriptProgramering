@@ -8,6 +8,8 @@ import urllib.request
 import time
 from selenium import webdriver  # needs to be whitelisted
 
+
+
 # r (raw string) => https://stackoverflow.com/questions/52360537/i-know-of-f-strings-but-what-are-r-strings-are-there-others
 CROME_DRIVER_PATH = r'C:\temp\chromedriver.exe'
 BASE_SAVE_FOLDER = 'images/'

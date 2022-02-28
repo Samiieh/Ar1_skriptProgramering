@@ -3,18 +3,24 @@ import time
 import psutil as psu
 import numpy as np
 import multiprocessing as mp
+from spinner_progress import Spinner
+import asyncio
 
+# lowest blir satt till 0
+# highest blir högsta talet i en uint32 429... nånting
 lowest = np.iinfo(np.uint32).min
 highest = np.iinfo(np.uint32).max
 
+# med hjälp av randint så väljs en random key ut inom intervallet av lowest-highest en uint32 kan innehålla. 
 key = np.random.randint(low=lowest, high=highest, dtype="uint32")
 
-#key = 121830
+key = 121830 # Hårdkodar key för att det ska gå snabbare, orka vänta liksom..
 
-cpu_cores = psu.cpu_count(logical=True) # kör bara på 2 kärnor, de fysiska. INGA LOGISKA.
-# cpu_cores = psutil.cpu_count(1)
+# False = kör bara på de fysiska, alltså INGA LOGISKA.
+# True = kör med de fysiska och logiska.
+cpu_cores = psu.cpu_count(logical=True) 
 
-
+# Skapar en global int för att kunna komma åt den överallt
 def init_globals(key_not_found):
     global KEY_NOT_FOUND
     KEY_NOT_FOUND = key_not_found
@@ -32,15 +38,14 @@ def crack_key(cpu_num, key_count, key_end):
             key_count += 1
 
 def main():
+    
     time_start = time.perf_counter() # startar en klocka för att hålla koll på tiden
-
     print(f'\nRandom secret key is: {key}')
     print(f'CPU process count is: {cpu_cores}\n')
 
-# Delar max numret för uint32 med antalet kärnor
-
+    # Delar max numret för uint32 med antalet kärnor
     key_range = round(np.iinfo(np.uint32).max / cpu_cores)
-
+    # skapar tomma listor vi kan använda
     cores = []
     start = []
     end = []
@@ -58,15 +63,20 @@ def main():
     print(f'Start keyspace offset: {start}\nEnd keyspace offsets: {end}\n')
 
     key_not_found = mp.Value('i',True)
-
-    with cf.ProcessPoolExecutor(max_workers=cpu_cores, initializer=init_globals, initargs=(key_not_found,)) as executor:
-        for result in executor.map(crack_key, cores, start, end):
-            if result != None:
-                print(result)
+    # importera sprinner för frän effekt
+    with Spinner():
+        with cf.ProcessPoolExecutor(max_workers=cpu_cores, initializer=init_globals, initargs=(key_not_found,)) as executor:
+            for result in executor.map(crack_key, cores, start, end):
+                if result != None:
+                    print(result)
 
     time_finish = time.perf_counter() # stannar tiden
     print(f'Finished in {round(time_finish - time_start, 2)} seconds\n')
     cpu_info()
+
+
+
+
 # printar lite cpu info
 def cpu_info():
     cpufreq = psu.cpu_freq()
