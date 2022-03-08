@@ -13,7 +13,7 @@ def face_rec():
     face_recognizer = cv.face.LBPHFaceRecognizer_create()
     face_recognizer.read('face_trained.yml')
 
-    img = cv.imread(r'C:\Users\valli\Documents\GitHub\SkriptProg\lab 6\val\leffe_gw\leffe5.jpg')
+    img = cv.imread(r'C:\Users\valli\Documents\GitHub\SkriptProg\lab 6\val\madonna\4.jpg')
 
 
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
